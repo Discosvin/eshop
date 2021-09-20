@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+
+</head>
+<body>
+{% for p in products%}
+    <div>
+        <a href="{% url 'catalog:product_view' p.id%}"> {{ p.name }}</a>
+    <div>
+{% endfor %}
+
+</body>
+</html>
